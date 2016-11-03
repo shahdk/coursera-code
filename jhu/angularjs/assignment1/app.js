@@ -6,7 +6,7 @@
     .controller('LunchCheckerController', function($scope) {
         $scope.lunchorder = "";
         $scope.totalValue = -1;
-        $scope.messageClass = "whitemsg";
+        $scope.messageColor = "black";
 
         $scope.checkLunch = function() {
             var totalNameValue = $scope.lunchorder.split(",");
@@ -25,13 +25,13 @@
             if ($scope.totalValue == -1) {
                 return "";
             } else if ($scope.totalValue == 0) {
-                $scope.messageClass = "redmsg";
+                $scope.messageColor = "red";
                 return "Please enter data first";
             } else if ($scope.totalValue <= 3) {
-                $scope.messageClass = "greenmsg";
+                $scope.messageColor = "green";
                 return "Enjoy!";
             } else {
-                $scope.messageClass = "greenmsg";
+                $scope.messageColor = "green";
                 return "Too much!";
             }
         };
