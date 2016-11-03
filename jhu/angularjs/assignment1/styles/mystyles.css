@@ -1,0 +1,14 @@
+.greenmsg {
+    color: green;
+    border: 2px solid green;
+}
+
+.redmsg {
+    color: red;
+    border: 2px solid red;
+}
+
+.whitemsg {
+    color: white;
+    border-color: white;
+}
